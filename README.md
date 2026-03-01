@@ -1,25 +1,26 @@
 # Kanban Project Manager
 
-## Instructions
+A single-board Kanban web app: five columns, cards with title and details, drag-and-drop between columns and reorder within a column. Add and delete cards; rename column titles. No login, no persistence (in-memory only).
 
-This is a skeleton project to be the basis for your Kanban project for Week 1 of the Complete AI Coder Course. See the course resources for more.
+## Run locally
 
-You should clone this repo within your projects directory with:
+From the project root:
 
-`git clone https://github.com/ed-donner/kanban.git`
+```bash
+cd frontend && npm install
+npm run dev
+```
 
-And then refine the AGENTS.md before using in your Coding Agent of choice.
+Open [http://localhost:3000](http://localhost:3000).
 
-If you don't have git installed, you can [install it here](https://git-scm.com/install/) and you might need to reboot afterwards.
+## Build and test
 
-## Contributing your AGENTS.md
+- **Build:** `cd frontend && npm run build`
+- **Unit tests:** `cd frontend && npm run test`
+- **E2E tests:** `cd frontend && npx playwright install` (once), then `cd frontend && npm run test:e2e`
 
-If you have suggested AGENTS.md changes that have worked well for you, please contribute them to benefit other students! Follow the instructions linked [here](https://edwarddonner.com/pr) to raise a PR to put it in community_contributions. Name your file something like ED_DONNER_AGENTS.md but with your name..
+## Tech
 
-I can't wait to see your changes.
-
-## Posting your app
-
-When you've successfully built a Kanban app, if you'd like to post about it on LinkedIn and tag me, then I'll weigh in to amplify your success and draw more attention to your achievements.
-
-If you see other students doing this, please weigh in yourself to add your support and encouragement. It's so helpful for the community if we support each other.
+- Next.js 15 (App Router), React 19, TypeScript
+- Drag-and-drop: @dnd-kit
+- Tests: Vitest (unit), Playwright (e2e)
