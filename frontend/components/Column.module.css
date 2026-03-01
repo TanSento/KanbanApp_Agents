@@ -1,0 +1,119 @@
+.column {
+  min-width: 280px;
+  max-width: 320px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--blue-primary);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.column.dropTarget {
+  border-top-color: var(--accent-yellow);
+  background: rgba(236, 173, 10, 0.04);
+}
+
+.columnHeader {
+  margin-bottom: 12px;
+}
+
+.columnTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-navy);
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.columnTitle:hover {
+  background: rgba(32, 157, 215, 0.08);
+}
+
+.titleInput {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 1px solid var(--blue-primary);
+  border-radius: 6px;
+  color: var(--dark-navy);
+}
+
+.cards {
+  flex: 1;
+  min-height: 60px;
+}
+
+.addForm {
+  margin-top: 8px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px dashed var(--gray-text);
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  color: var(--dark-navy);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 48px;
+}
+
+.formActions {
+  display: flex;
+  gap: 8px;
+}
+
+.submitBtn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: #fff;
+  background: var(--purple-secondary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  opacity: 0.95;
+}
+
+.cancelBtn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: var(--gray-text);
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.addCardBtn {
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: var(--blue-primary);
+  background: transparent;
+  border: 1px dashed var(--blue-primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.addCardBtn:hover {
+  background: rgba(32, 157, 215, 0.08);
+}

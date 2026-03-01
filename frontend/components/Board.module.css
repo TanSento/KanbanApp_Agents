@@ -1,0 +1,22 @@
+.board {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.heading {
+  margin: 0 0 24px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--dark-navy);
+  border-bottom: 3px solid var(--accent-yellow);
+  padding-bottom: 12px;
+  display: inline-block;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  align-items: flex-start;
+}
