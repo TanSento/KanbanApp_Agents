@@ -24,3 +24,5 @@ Open [http://localhost:3000](http://localhost:3000).
 - Next.js 15 (App Router), React 19, TypeScript
 - Drag-and-drop: @dnd-kit
 - Tests: Vitest (unit), Playwright (e2e)
+
+Built with Cursor Agents as practice for agentic coding.
